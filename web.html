@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: blueviolet;
+        margin: 0;
+    }
+    .main1{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to right,darkgray,black);
+        position: relative;
+    }
+    .sub11{
+        transform: scale(0.1);
+        opacity: 0;
+        z-index: 1;
+        width: 90vw;
+        height: 70vh;
+       
+        left: 5vw;
+        position: absolute;
+        top: 30vh;
+        transition: all 2s ease-in-out;
+    }
+    .main1:hover .sub11{
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    .sub11 img{
+        width: 90vw;
+        height: 60vh;
+
+    }
+
+    .sub12{
+        width: 80vw;
+        height: 40vh;
+        top: 10vh;
+        
+        font-size: 150px;
+        position:absolute;
+        left: 10vw;
+        text-align: center;
+        color: darkgray;
+
+    }
+    .sub12 h1{
+        margin: 0;
+
+    }
+    span{
+        color: rgb(241, 82, 3);
+    }
+    .sub13{
+        
+        font-size: x-large;
+        color: darkgray;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+    .sub13 td{
+        padding-left: 50px;
+    }
+    .sub13 td:hover{
+        color:  rgb(241, 82, 3);
+    }
+    .sub14{
+        position: absolute;
+        top: 0px;
+        left: 50px;
+
+    }
+    .sub14 img{
+        width: 200px;
+    }
+    .sub13 td:hover{
+        transform: scale(1.1);
+        transition: 1s ease-out;
+    }
+    .main2{
+        width: 100vw;
+        height: 100vh;
+        background-color: brown;
+        position: relative;
+    }
+    #main2_img{
+        width: 100vw;
+        height: 100vh;
+
+    }
+    .sub21{
+        width: 20vw;
+        height: 50vh;
+        
+        position: absolute;
+        top: 25vh;
+        left: 2vw;
+        font-size: 100px;
+        color: white;
+    }
+    .sub22{
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        top: 0vh;
+        left: 100vw;
+        transition: all 1s ease-in;
+    }
+    .main2:hover .sub22{
+        left: 0vw;
+        transition-delay: 2s;
+
+    }
+    .sub23{
+        width: 40vw;
+        height: 40vh;
+        
+        position: absolute;
+        top: 30vh;
+        left: 5vw;
+        font-size: x-large;
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: all 1s ease-in;
+        box-shadow: 2px 2px silver;
+        border-radius: 20px;
+    }
+    .main2:hover .sub23{
+        opacity: 1;
+        transition-delay: 2.5s;
+        
+    
+    }
+    .box{
+        width: 35vw;
+        height: 40vh;
+        
+    }
+    .box:hover{
+        z-index: 2;
+        
+    }
+    .box img{
+        width: 35vw;
+        height: 40vh;
+        border-radius: 30px;
+        border-color: 3px silver;
+
+    }
+    .sub24{
+        position: absolute;
+        right: 5vw;
+        top: 10vh;
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+    .sub25{
+        position: absolute;
+        right: 5vw;
+        top: 25vh;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+    .sub26{
+        position: absolute;
+        right: 5vw;
+        top: 50vh;
+        opacity: 0;
+        transition: 0.5 ease-in;
+    }
+    .main2:hover .sub24{
+        opacity: 1;
+        transition-delay: 3.5s;
+        top: 10vh;
+
+    }
+    .main2:hover .sub25{
+        opacity: 1;
+        transition-delay: 3.5s;
+        top: 30vh;
+
+    }
+    .main2:hover .sub26{
+        opacity: 1;
+        transition-delay: 3.5s;
+        top: 50vh;
+
+    }
+    .m2_img{
+        position: absolute;
+        right: 5vw;
+        transition: all 0.5s ease-in-out;
+    }
+    .m2_img{
+        transform: scale(1.1);
+
+    }
+    
+    
+</style>
+<body>
+    <div class="main1">
+        <div class="sub11">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-mclaren-p1-gtr-race-carcarvehicletransportmclarenrace-car-961524638289sojtd.png">
+        </div>
+        <div class="sub12">
+            <h1><span>M</span>c<span>L</span>aren</h1>
+        </div>
+        <div class="sub13">
+            <table>
+                <tr>
+                    <td>Models</td>
+                    <td>Bookings</td>
+                    <td>Racing</td>
+                    <td>Explore</td>
+                    <td>Login</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sub14">
+           <img src="https://img.icons8.com/m_sharp/512/FD7E14/mclaren.png" alt="">
+        </div>
+ </div>
+ <div class="main2">
+    <img src="https://mclaren.scene7.com/is/image/mclaren/w1-rear-three-quarter-low:crop-16x9?wid=1600&hei=900" alt="" id="main2_img">
+    <div class="sub21">
+        <span>M</span>c<span>L</span>aren
+        <br>
+         <span>W1</span>
+        <br>
+        Series
+        <br>
+        Racing
+    </div>
+    <div class="sub22">
+
+    </div>
+    <div class="sub23">
+        <h1>McLsrern W1 Model</h1>
+        <p>McLaren is a British automotive company renowned for producing high-performance supercars and hypercars that combine Formula 1 technology with luxury design. Founded in 1963 by racer Bruce McLaren, the brand first gained fame in Formula 1 before entering the road car market with the legendary McLaren F1 in 1992.</p>
+
+    </div>
+    <div class="sub24 box">
+        <img src="https://mclaren.scene7.com/is/image/mclaren/mclaren-w1-front%20seats-and-dashboard:crop-16x9?wid=1600&hei=900" alt="" class="m2_img">
+    </div>
+    <div class="sub25 box">
+        <img src="https://mclaren.scene7.com/is/image/mclaren/mclaren-w1-orange-doors-open:crop-16x9?wid=1920&hei=1080" alt="" class="m2_img">
+    </div>
+    <div class="sub26 box">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/11-mhp-8-engine-transparent-view-67c0982a21608.jpeg?resize=980:*" alt="" class="m2_img">
+    </div>
+
+
+ </div>
+
+
+    
+</body>
+</html>                                                                                                     
